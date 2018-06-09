@@ -1,5 +1,15 @@
-StackCheck 
+LdaConstant [0]
+Star r1
 LdaZero 
-StaGlobal [0], [0]
-Star r0
+Star r2
+Mov <closure>, r3
+CallRuntime [DeclareGlobals], r1-r3
+StackCheck 
+LdaGlobal [1], [2]
+Star r1
+LdaZero 
+Star r2
+CallUndefinedReceiver1 r1, r2, [4]
+StaGlobal [2], [6]
+LdaUndefined 
 Return 

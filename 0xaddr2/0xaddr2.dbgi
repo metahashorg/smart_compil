@@ -1,10 +1,38 @@
- -> 0x345f97c1db72 @    0 : a0                StackCheck 
- -> 0x345f97c1db73 @    1 : 0b                LdaZero 
+ -> 0x16657061dbba @    0 : 12 00             LdaConstant [0]
+      [ accumulator <- 0x16657061daf9 <FixedArray[4]> ]
+ -> 0x16657061dbbc @    2 : 26 fa             Star r1
+      [ accumulator -> 0x16657061daf9 <FixedArray[4]> ]
+      [          r1 <- 0x16657061daf9 <FixedArray[4]> ]
+ -> 0x16657061dbbe @    4 : 0b                LdaZero 
       [ accumulator <- 0 ]
- -> 0x345f97c1db74 @    2 : 15 00 00          StaGlobal [0], [0]
+ -> 0x16657061dbbf @    5 : 26 f9             Star r2
       [ accumulator -> 0 ]
- -> 0x345f97c1db77 @    5 : 26 fb             Star r0
+      [          r2 <- 0 ]
+ -> 0x16657061dbc1 @    7 : 27 fe f8          Mov <closure>, r3
+      [   <closure> -> 0x16657061dbf9 <JSFunction (sfi = 0x16657061da29)> ]
+      [          r3 <- 0x16657061dbf9 <JSFunction (sfi = 0x16657061da29)> ]
+ -> 0x16657061dbc4 @   10 : 5e 73 01 fa 03    CallRuntime [DeclareGlobals], r1-r3
+      [          r1 -> 0x16657061daf9 <FixedArray[4]> ]
+      [          r2 -> 0 ]
+      [          r3 -> 0x16657061dbf9 <JSFunction (sfi = 0x16657061da29)> ]
+      [ accumulator <- 0x0777f13826f1 <undefined> ]
+ -> 0x16657061dbc9 @   15 : a0                StackCheck 
+ -> 0x16657061dbca @   16 : 13 01 02          LdaGlobal [1], [2]
+      [ accumulator <- 0x166570608239 <JSFunction Number (sfi = 0x3f7d46d12299)> ]
+ -> 0x16657061dbcd @   19 : 26 fa             Star r1
+      [ accumulator -> 0x166570608239 <JSFunction Number (sfi = 0x3f7d46d12299)> ]
+      [          r1 <- 0x166570608239 <JSFunction Number (sfi = 0x3f7d46d12299)> ]
+ -> 0x16657061dbcf @   21 : 0b                LdaZero 
+      [ accumulator <- 0 ]
+ -> 0x16657061dbd0 @   22 : 26 f9             Star r2
       [ accumulator -> 0 ]
-      [          r0 <- 0 ]
- -> 0x345f97c1db79 @    7 : a4                Return 
+      [          r2 <- 0 ]
+ -> 0x16657061dbd2 @   24 : 5b fa f9 04       CallUndefinedReceiver1 r1, r2, [4]
+      [          r1 -> 0x166570608239 <JSFunction Number (sfi = 0x3f7d46d12299)> ]
+      [          r2 -> 0 ]
+ -> 0x16657061dbd6 @   28 : 15 02 06          StaGlobal [2], [6]
       [ accumulator -> 0 ]
+ -> 0x16657061dbd9 @   31 : 0d                LdaUndefined 
+      [ accumulator <- 0x0777f13826f1 <undefined> ]
+ -> 0x16657061dbda @   32 : a4                Return 
+      [ accumulator -> 0x0777f13826f1 <undefined> ]

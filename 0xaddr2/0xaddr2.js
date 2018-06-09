@@ -1,1 +1,1 @@
-a = 0;
+var a = Number(0);
