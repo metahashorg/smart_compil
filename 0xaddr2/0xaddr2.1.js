@@ -3,3 +3,5 @@ let strDump = '{"items":[{"key":"ammount","type":"number","value":220},{"key":"d
 contExp = Object.assign(contExp, makeClass(strDump));
 
 
+
+
