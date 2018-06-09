@@ -1,0 +1,11 @@
+LdaConstant [0]
+Star r1
+CallRuntime [NewScriptContext], r1-r1
+PushContext r1
+LdaTheHole 
+StaCurrentContextSlot [4]
+StackCheck 
+LdaSmi [100]
+StaCurrentContextSlot [4]
+LdaUndefined 
+Return 
