@@ -1,1 +1,4 @@
-a += "a";
+let d = dumpClass(contExp);
+d;
+
+
