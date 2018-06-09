@@ -1,27 +1,123 @@
- -> 0x721cd79dbb2 @    0 : 12 00             LdaConstant [0]
-      [ accumulator <- 0x0721cd79daf9 <FixedArray[4]> ]
- -> 0x721cd79dbb4 @    2 : 26 fa             Star r1
-      [ accumulator -> 0x0721cd79daf9 <FixedArray[4]> ]
-      [          r1 <- 0x0721cd79daf9 <FixedArray[4]> ]
- -> 0x721cd79dbb6 @    4 : 0b                LdaZero 
-      [ accumulator <- 0 ]
- -> 0x721cd79dbb7 @    5 : 26 f9             Star r2
-      [ accumulator -> 0 ]
-      [          r2 <- 0 ]
- -> 0x721cd79dbb9 @    7 : 27 fe f8          Mov <closure>, r3
-      [   <closure> -> 0x0721cd79dbe1 <JSFunction (sfi = 0x721cd79da29)> ]
-      [          r3 <- 0x0721cd79dbe1 <JSFunction (sfi = 0x721cd79da29)> ]
- -> 0x721cd79dbbc @   10 : 5e 73 01 fa 03    CallRuntime [DeclareGlobals], r1-r3
-      [          r1 -> 0x0721cd79daf9 <FixedArray[4]> ]
-      [          r2 -> 0 ]
-      [          r3 -> 0x0721cd79dbe1 <JSFunction (sfi = 0x721cd79da29)> ]
-      [ accumulator <- 0x0e49583826f1 <undefined> ]
- -> 0x721cd79dbc1 @   15 : a0                StackCheck 
- -> 0x721cd79dbc2 @   16 : 12 01             LdaConstant [1]
-      [ accumulator <- 0x0e49583870a9 <String[6]: string> ]
- -> 0x721cd79dbc4 @   18 : 15 02 02          StaGlobal [2], [2]
-      [ accumulator -> 0x0e49583870a9 <String[6]: string> ]
- -> 0x721cd79dbc7 @   21 : 0d                LdaUndefined 
-      [ accumulator <- 0x0e49583826f1 <undefined> ]
- -> 0x721cd79dbc8 @   22 : a4                Return 
-      [ accumulator -> 0x0e49583826f1 <undefined> ]
+ -> 0x259fc84a20ea @    0 : 12 00             LdaConstant [0]
+      [ accumulator <- 0x259fc84a1c59 <ScopeInfo SCRIPT_SCOPE [16]> ]
+ -> 0x259fc84a20ec @    2 : 26 f9             Star r2
+      [ accumulator -> 0x259fc84a1c59 <ScopeInfo SCRIPT_SCOPE [16]> ]
+      [          r2 <- 0x259fc84a1c59 <ScopeInfo SCRIPT_SCOPE [16]> ]
+ -> 0x259fc84a20ee @    4 : 5e 7c 01 f9 01    CallRuntime [NewScriptContext], r2-r2
+      [          r2 -> 0x259fc84a1c59 <ScopeInfo SCRIPT_SCOPE [16]> ]
+      [ accumulator <- 0x259fc84a2309 <ScriptContext[7]> ]
+ -> 0x259fc84a20f3 @    9 : 16 f9             PushContext r2
+      [ accumulator -> 0x259fc84a2309 <ScriptContext[7]> ]
+      [          r2 <- 0x259fc8482201 <NativeContext[249]> ]
+ -> 0x259fc84a20f5 @   11 : 0f                LdaTheHole 
+      [ accumulator <- 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a20f6 @   12 : 1d 04             StaCurrentContextSlot [4]
+      [ accumulator -> 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a20f8 @   14 : 0f                LdaTheHole 
+      [ accumulator <- 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a20f9 @   15 : 1d 05             StaCurrentContextSlot [5]
+      [ accumulator -> 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a20fb @   17 : 0f                LdaTheHole 
+      [ accumulator <- 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a20fc @   18 : 1d 06             StaCurrentContextSlot [6]
+      [ accumulator -> 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a20fe @   20 : a0                StackCheck 
+ -> 0x259fc84a20ff @   21 : 13 01 00          LdaGlobal [1], [0]
+      [ accumulator <- 0x259fc8492679 <JSFunction Map (sfi = 0x2c2b9dc9df71)> ]
+ -> 0x259fc84a2102 @   24 : 26 f8             Star r3
+      [ accumulator -> 0x259fc8492679 <JSFunction Map (sfi = 0x2c2b9dc9df71)> ]
+      [          r3 <- 0x259fc8492679 <JSFunction Map (sfi = 0x2c2b9dc9df71)> ]
+ -> 0x259fc84a2104 @   26 : 28 f8 02 02       LdaNamedProperty r3, [2], [2]
+      [          r3 -> 0x259fc8492679 <JSFunction Map (sfi = 0x2c2b9dc9df71)> ]
+      [ accumulator <- 0x259fc84927c9 <Object map = 0x3dc3fc985221> ]
+ -> 0x259fc84a2108 @   30 : 26 f8             Star r3
+      [ accumulator -> 0x259fc84927c9 <Object map = 0x3dc3fc985221> ]
+      [          r3 <- 0x259fc84927c9 <Object map = 0x3dc3fc985221> ]
+ -> 0x259fc84a210a @   32 : 7c 03 04 01       CreateClosure [3], [4], #1
+      [ accumulator <- 0x259fc84a2361 <JSFunction Map.toArray (sfi = 0x259fc84a1ce9)> ]
+ -> 0x259fc84a210e @   36 : 2c f8 04 05       StaNamedProperty r3, [4], [5]
+      [ accumulator -> 0x259fc84a2361 <JSFunction Map.toArray (sfi = 0x259fc84a1ce9)> ]
+      [          r3 -> 0x259fc84927c9 <Object map = 0x3dc3fc985221> ]
+      [ accumulator <- 0x259fc84a2361 <JSFunction Map.toArray (sfi = 0x259fc84a1ce9)> ]
+ -> 0x259fc84a2112 @   40 : 13 05 07          LdaGlobal [5], [7]
+      [ accumulator <- 0x259fc8482a71 <JSFunction Object (sfi = 0x2c2b9dc8f511)> ]
+ -> 0x259fc84a2115 @   43 : 26 f8             Star r3
+      [ accumulator -> 0x259fc8482a71 <JSFunction Object (sfi = 0x2c2b9dc8f511)> ]
+      [          r3 <- 0x259fc8482a71 <JSFunction Object (sfi = 0x2c2b9dc8f511)> ]
+ -> 0x259fc84a2117 @   45 : 28 f8 02 09       LdaNamedProperty r3, [2], [9]
+      [          r3 -> 0x259fc8482a71 <JSFunction Object (sfi = 0x2c2b9dc8f511)> ]
+      [ accumulator <- 0x259fc8482a39 <Object map = 0x3dc3fc982309> ]
+ -> 0x259fc84a211b @   49 : 26 f8             Star r3
+      [ accumulator -> 0x259fc8482a39 <Object map = 0x3dc3fc982309> ]
+      [          r3 <- 0x259fc8482a39 <Object map = 0x3dc3fc982309> ]
+ -> 0x259fc84a211d @   51 : 7c 06 0b 01       CreateClosure [6], [11], #1
+      [ accumulator <- 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+ -> 0x259fc84a2121 @   55 : 26 f7             Star r4
+      [ accumulator -> 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+      [          r4 <- 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+ -> 0x259fc84a2123 @   57 : 2c f8 04 0c       StaNamedProperty r3, [4], [12]
+      [ accumulator -> 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+      [          r3 -> 0x259fc8482a39 <Object map = 0x3dc3fc982309> ]
+      [ accumulator <- 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+ -> 0x259fc84a2127 @   61 : 27 f7 fa          Mov r4, r1
+      [          r4 -> 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+      [          r1 <- 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+ -> 0x259fc84a212a @   64 : 7c 07 0e 00       CreateClosure [7], [14], #0
+      [ accumulator <- 0x2173f4585d01 <JSFunction dumpClass (sfi = 0x259fc84a1dc9)> ]
+ -> 0x259fc84a212e @   68 : 1d 04             StaCurrentContextSlot [4]
+      [ accumulator -> 0x2173f4585d01 <JSFunction dumpClass (sfi = 0x259fc84a1dc9)> ]
+ -> 0x259fc84a2130 @   70 : 7c 08 0f 00       CreateClosure [8], [15], #0
+      [ accumulator <- 0x2173f4585d39 <JSFunction makeClass (sfi = 0x259fc84a1e39)> ]
+ -> 0x259fc84a2134 @   74 : 1d 05             StaCurrentContextSlot [5]
+      [ accumulator -> 0x2173f4585d39 <JSFunction makeClass (sfi = 0x259fc84a1e39)> ]
+ -> 0x259fc84a2136 @   76 : 0f                LdaTheHole 
+      [ accumulator <- 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a2137 @   77 : 26 f5             Star r6
+      [ accumulator -> 0x0ee0a2382801 <the_hole> ]
+      [          r6 <- 0x0ee0a2382801 <the_hole> ]
+ -> 0x259fc84a2139 @   79 : 7c 0a 10 00       CreateClosure [10], [16], #0
+      [ accumulator <- 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+ -> 0x259fc84a213d @   83 : 26 f8             Star r3
+      [ accumulator -> 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+      [          r3 <- 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+ -> 0x259fc84a213f @   85 : 12 09             LdaConstant [9]
+      [ accumulator <- 0x2173f4585991 <FixedArray[7]> ]
+ -> 0x259fc84a2141 @   87 : 26 f7             Star r4
+      [ accumulator -> 0x2173f4585991 <FixedArray[7]> ]
+      [          r4 <- 0x2173f4585991 <FixedArray[7]> ]
+ -> 0x259fc84a2143 @   89 : 7c 0b 11 00       CreateClosure [11], [17], #0
+      [ accumulator <- 0x2173f4585db1 <JSFunction add (sfi = 0x259fc84a1f19)> ]
+ -> 0x259fc84a2147 @   93 : 26 f4             Star r7
+      [ accumulator -> 0x2173f4585db1 <JSFunction add (sfi = 0x259fc84a1f19)> ]
+      [          r7 <- 0x2173f4585db1 <JSFunction add (sfi = 0x259fc84a1f19)> ]
+ -> 0x259fc84a2149 @   95 : 7c 0c 12 00       CreateClosure [12], [18], #0
+      [ accumulator <- 0x2173f4585de9 <JSFunction addPaymentInfo (sfi = 0x259fc84a1f89)> ]
+ -> 0x259fc84a214d @   99 : 26 f3             Star r8
+      [ accumulator -> 0x2173f4585de9 <JSFunction addPaymentInfo (sfi = 0x259fc84a1f89)> ]
+      [          r8 <- 0x2173f4585de9 <JSFunction addPaymentInfo (sfi = 0x259fc84a1f89)> ]
+ -> 0x259fc84a214f @  101 : 27 f8 f6          Mov r3, r5
+      [          r3 -> 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+      [          r5 <- 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+ -> 0x259fc84a2152 @  104 : 5e 26 00 f7 05    CallRuntime [DefineClass], r4-r8
+      [          r4 -> 0x2173f4585991 <FixedArray[7]> ]
+      [          r5 -> 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+      [          r6 -> 0x0ee0a2382801 <the_hole> ]
+      [          r7 -> 0x2173f4585db1 <JSFunction add (sfi = 0x259fc84a1f19)> ]
+      [          r8 -> 0x2173f4585de9 <JSFunction addPaymentInfo (sfi = 0x259fc84a1f89)> ]
+      [ accumulator <- 0x2173f4585e21 <Contract map = 0x3dc3fc987c11> ]
+ -> 0x259fc84a2157 @  109 : 26 f7             Star r4
+      [ accumulator -> 0x2173f4585e21 <Contract map = 0x3dc3fc987c11> ]
+      [          r4 <- 0x2173f4585e21 <Contract map = 0x3dc3fc987c11> ]
+ -> 0x259fc84a2159 @  111 : 27 f6 fb          Mov r5, r0
+      [          r5 -> 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+      [          r0 <- 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+ -> 0x259fc84a215c @  114 : 25 fb             Ldar r0
+      [          r0 -> 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+      [ accumulator <- 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+ -> 0x259fc84a215e @  116 : 1d 06             StaCurrentContextSlot [6]
+      [ accumulator -> 0x2173f4585d71 <JSFunction Contract (sfi = 0x259fc84a1ea9)> ]
+ -> 0x259fc84a2160 @  118 : 25 fa             Ldar r1
+      [          r1 -> 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+      [ accumulator <- 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
+ -> 0x259fc84a2162 @  120 : a4                Return 
+      [ accumulator -> 0x259fc84a23b1 <JSFunction Object.toArray (sfi = 0x259fc84a1d59)> ]
