@@ -1,50 +1,10 @@
- -> 0x2f661cc1dbe2 @    0 : 12 00             LdaConstant [0]
-      [ accumulator <- 0x2f661cc1daf9 <FixedArray[8]> ]
- -> 0x2f661cc1dbe4 @    2 : 26 fa             Star r1
-      [ accumulator -> 0x2f661cc1daf9 <FixedArray[8]> ]
-      [          r1 <- 0x2f661cc1daf9 <FixedArray[8]> ]
- -> 0x2f661cc1dbe6 @    4 : 0b                LdaZero 
+ -> 0x13ea0919db72 @    0 : a0                StackCheck 
+ -> 0x13ea0919db73 @    1 : 0b                LdaZero 
       [ accumulator <- 0 ]
- -> 0x2f661cc1dbe7 @    5 : 26 f9             Star r2
+ -> 0x13ea0919db74 @    2 : 15 00 00          StaGlobal [0], [0]
       [ accumulator -> 0 ]
-      [          r2 <- 0 ]
- -> 0x2f661cc1dbe9 @    7 : 27 fe f8          Mov <closure>, r3
-      [   <closure> -> 0x2f661cc1dc31 <JSFunction (sfi = 0x2f661cc1da29)> ]
-      [          r3 <- 0x2f661cc1dc31 <JSFunction (sfi = 0x2f661cc1da29)> ]
- -> 0x2f661cc1dbec @   10 : 5e 73 01 fa 03    CallRuntime [DeclareGlobals], r1-r3
-      [          r1 -> 0x2f661cc1daf9 <FixedArray[8]> ]
-      [          r2 -> 0 ]
-      [          r3 -> 0x2f661cc1dc31 <JSFunction (sfi = 0x2f661cc1da29)> ]
-      [ accumulator <- 0x35361f1026f1 <undefined> ]
- -> 0x2f661cc1dbf1 @   15 : a0                StackCheck 
- -> 0x2f661cc1dbf2 @   16 : 0b                LdaZero 
-      [ accumulator <- 0 ]
- -> 0x2f661cc1dbf3 @   17 : 15 01 04          StaGlobal [1], [4]
+ -> 0x13ea0919db77 @    5 : 26 fb             Star r0
       [ accumulator -> 0 ]
- -> 0x2f661cc1dbf6 @   20 : 13 01 00          LdaGlobal [1], [0]
-      [ accumulator <- 0 ]
- -> 0x2f661cc1dbf9 @   23 : 15 02 06          StaGlobal [2], [6]
+      [          r0 <- 0 ]
+ -> 0x13ea0919db79 @    7 : a4                Return 
       [ accumulator -> 0 ]
- -> 0x2f661cc1dbfc @   26 : 13 01 00          LdaGlobal [1], [0]
-      [ accumulator <- 0 ]
- -> 0x2f661cc1dbff @   29 : 4a 08             Inc [8]
-      [ accumulator -> 0 ]
-      [ accumulator <- 1 ]
- -> 0x2f661cc1dc01 @   31 : 15 01 04          StaGlobal [1], [4]
-      [ accumulator -> 1 ]
- -> 0x2f661cc1dc04 @   34 : 13 02 02          LdaGlobal [2], [2]
-      [ accumulator <- 0 ]
- -> 0x2f661cc1dc07 @   37 : 4a 09             Inc [9]
-      [ accumulator -> 0 ]
-      [ accumulator <- 1 ]
- -> 0x2f661cc1dc09 @   39 : 15 02 06          StaGlobal [2], [6]
-      [ accumulator -> 1 ]
- -> 0x2f661cc1dc0c @   42 : 13 01 00          LdaGlobal [1], [0]
-      [ accumulator <- 1 ]
- -> 0x2f661cc1dc0f @   45 : 13 02 02          LdaGlobal [2], [2]
-      [ accumulator <- 1 ]
- -> 0x2f661cc1dc12 @   48 : 26 fb             Star r0
-      [ accumulator -> 1 ]
-      [          r0 <- 1 ]
- -> 0x2f661cc1dc14 @   50 : a4                Return 
-      [ accumulator -> 1 ]
