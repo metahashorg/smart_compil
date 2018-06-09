@@ -1,0 +1,47 @@
+LdaConstant [0]
+Star r2
+CallRuntime [NewScriptContext], r2-r2
+PushContext r2
+LdaTheHole 
+StaCurrentContextSlot [4]
+LdaTheHole 
+StaCurrentContextSlot [5]
+LdaTheHole 
+StaCurrentContextSlot [6]
+StackCheck 
+LdaGlobal [1], [0]
+Star r3
+LdaNamedProperty r3, [2], [2]
+Star r3
+CreateClosure [3], [4], #1
+StaNamedProperty r3, [4], [5]
+LdaGlobal [5], [7]
+Star r3
+LdaNamedProperty r3, [2], [9]
+Star r3
+CreateClosure [6], [11], #1
+Star r4
+StaNamedProperty r3, [4], [12]
+Mov r4, r1
+CreateClosure [7], [14], #0
+StaCurrentContextSlot [4]
+CreateClosure [8], [15], #0
+StaCurrentContextSlot [5]
+LdaTheHole 
+Star r6
+CreateClosure [10], [16], #0
+Star r3
+LdaConstant [9]
+Star r4
+CreateClosure [11], [17], #0
+Star r7
+CreateClosure [12], [18], #0
+Star r8
+Mov r3, r5
+CallRuntime [DefineClass], r4-r8
+Star r4
+Mov r5, r0
+Ldar r0
+StaCurrentContextSlot [6]
+Ldar r1
+Return 
