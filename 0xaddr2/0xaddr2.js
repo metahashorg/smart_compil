@@ -1,1 +1,1 @@
-var a = Number(0);
+var a = "string";

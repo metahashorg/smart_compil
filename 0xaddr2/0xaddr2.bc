@@ -5,11 +5,7 @@ Star r2
 Mov <closure>, r3
 CallRuntime [DeclareGlobals], r1-r3
 StackCheck 
-LdaGlobal [1], [2]
-Star r1
-LdaZero 
-Star r2
-CallUndefinedReceiver1 r1, r2, [4]
-StaGlobal [2], [6]
+LdaConstant [1]
+StaGlobal [2], [2]
 LdaUndefined 
 Return 
