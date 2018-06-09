@@ -1,0 +1,24 @@
+ -> 0x30f311da1bca @    0 : 12 00             LdaConstant [0]
+      [ accumulator <- 0x30f311da1ae1 <ScopeInfo SCRIPT_SCOPE [12]> ]
+ -> 0x30f311da1bcc @    2 : 26 fa             Star r1
+      [ accumulator -> 0x30f311da1ae1 <ScopeInfo SCRIPT_SCOPE [12]> ]
+      [          r1 <- 0x30f311da1ae1 <ScopeInfo SCRIPT_SCOPE [12]> ]
+ -> 0x30f311da1bce @    4 : 5e 7c 01 fa 01    CallRuntime [NewScriptContext], r1-r1
+      [          r1 -> 0x30f311da1ae1 <ScopeInfo SCRIPT_SCOPE [12]> ]
+      [ accumulator <- 0x30f311da1c59 <ScriptContext[5]> ]
+ -> 0x30f311da1bd3 @    9 : 16 fa             PushContext r1
+      [ accumulator -> 0x30f311da1c59 <ScriptContext[5]> ]
+      [          r1 <- 0x30f311d82201 <NativeContext[249]> ]
+ -> 0x30f311da1bd5 @   11 : 0f                LdaTheHole 
+      [ accumulator <- 0x0bbd3f582801 <the_hole> ]
+ -> 0x30f311da1bd6 @   12 : 1d 04             StaCurrentContextSlot [4]
+      [ accumulator -> 0x0bbd3f582801 <the_hole> ]
+ -> 0x30f311da1bd8 @   14 : a0                StackCheck 
+ -> 0x30f311da1bd9 @   15 : 0c 0a             LdaSmi [10]
+      [ accumulator <- 10 ]
+ -> 0x30f311da1bdb @   17 : 1d 04             StaCurrentContextSlot [4]
+      [ accumulator -> 10 ]
+ -> 0x30f311da1bdd @   19 : 0d                LdaUndefined 
+      [ accumulator <- 0x0bbd3f5826f1 <undefined> ]
+ -> 0x30f311da1bde @   20 : a4                Return 
+      [ accumulator -> 0x0bbd3f5826f1 <undefined> ]
