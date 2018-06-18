@@ -1,0 +1,146 @@
+LdaConstant [0]
+Star r2
+CallRuntime [NewScriptContext], r2-r2
+PushContext r2
+LdaTheHole 
+StaCurrentContextSlot [4]
+LdaTheHole 
+StaCurrentContextSlot [5]
+LdaTheHole 
+StaCurrentContextSlot [6]
+LdaTheHole 
+StaCurrentContextSlot [7]
+LdaTheHole 
+StaCurrentContextSlot [8]
+LdaTheHole 
+StaCurrentContextSlot [9]
+StackCheck 
+LdaTheHole 
+Star r6
+CreateClosure [2], [0], #0
+Star r3
+LdaConstant [1]
+Star r4
+CreateClosure [3], [1], #0
+Star r7
+CreateClosure [4], [2], #0
+Star r8
+CreateClosure [5], [3], #0
+Star r9
+CreateClosure [6], [4], #0
+Star r10
+CreateClosure [7], [5], #0
+Star r11
+CreateClosure [8], [6], #0
+Star r12
+CreateClosure [9], [7], #0
+Star r13
+CreateClosure [10], [8], #0
+Star r14
+CreateClosure [11], [9], #0
+Star r15
+CreateClosure [12], [10], #0
+Star r16
+CreateClosure [13], [11], #0
+Star r17
+CreateClosure [14], [12], #0
+Star r18
+CreateClosure [15], [13], #0
+Star r19
+CreateClosure [16], [14], #0
+Star r20
+CreateClosure [17], [15], #0
+Star r21
+Mov r3, r5
+CallRuntime [DefineClass], r4-r21
+Star r4
+Mov r5, r0
+Ldar r0
+StaCurrentContextSlot [4]
+CreateObjectLiteral [18], [16], #41, r3
+Ldar r3
+StaCurrentContextSlot [5]
+CreateObjectLiteral [19], [17], #41, r3
+Ldar r3
+StaCurrentContextSlot [6]
+CreateObjectLiteral [20], [18], #41, r3
+Ldar r3
+StaCurrentContextSlot [7]
+CreateObjectLiteral [21], [19], #41, r3
+Ldar r3
+StaCurrentContextSlot [8]
+LdaCurrentContextSlot [4]
+Star r3
+LdaImmutableCurrentContextSlot [5]
+Star r4
+Ldar r3
+Construct r3, r4-r4, [20]
+StackCheck 
+LdaConstant [0]
+StaNamedProperty <this>, [1], [0]
+LdaConstant [2]
+StaNamedProperty <this>, [3], [2]
+LdaSmi [2]
+StaNamedProperty <this>, [4], [4]
+CreateEmptyObjectLiteral 
+StaNamedProperty <this>, [5], [6]
+CreateEmptyObjectLiteral 
+StaNamedProperty <this>, [6], [8]
+LdaNamedProperty a0, [7], [10]
+StaNamedProperty <this>, [8], [12]
+StackCheck 
+Ldar a0
+StaNamedProperty <this>, [0], [0]
+LdaNamedProperty <this>, [1], [2]
+Star r0
+CallProperty0 r0, <this>, [4]
+CreateFunctionContext [0], [1]
+PushContext r0
+Ldar <this>
+StaCurrentContextSlot [4]
+StackCheck 
+LdaGlobal [1], [0]
+Star r3
+LdaNamedProperty r3, [2], [2]
+Star r2
+LdaImmutableCurrentContextSlot [4]
+Star r4
+LdaNamedProperty r4, [3], [4]
+Star r4
+CallProperty1 r2, r3, r4, [6]
+Star r2
+LdaNamedProperty r2, [4], [8]
+Star r1
+CreateClosure [5], [10], #2
+Star r3
+CallProperty1 r1, r2, r3, [11]
+LdaUndefined 
+Return 
+LdaUndefined 
+Return 
+LdaZero 
+StaNamedProperty <this>, [9], [14]
+LdaFalse 
+StaNamedProperty <this>, [10], [16]
+LdaGlobal [11], [18]
+Star r1
+LdaNamedProperty r1, [12], [20]
+Star r0
+LdaConstant [13]
+CreateObjectLiteral [14], [22], #41, r4
+Star r3
+LdaNamedProperty a0, [7], [23]
+StaNamedOwnProperty r4, [15], [25]
+Mov <this>, r2
+CallProperty r0, r1-r4, [27]
+LdaNamedProperty <this>, [5], [29]
+Star r0
+LdaNamedProperty <this>, [13], [31]
+Star r1
+LdaNamedProperty <this>, [9], [33]
+StaKeyedProperty r0, r1, [35]
+LdaUndefined 
+Return 
+StaCurrentContextSlot [9]
+LdaUndefined 
+Return 
