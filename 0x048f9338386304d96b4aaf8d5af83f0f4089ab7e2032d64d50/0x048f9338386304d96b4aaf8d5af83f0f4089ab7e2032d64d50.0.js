@@ -1,1 +1,1 @@
-logData()
+logData()logData()
