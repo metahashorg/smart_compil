@@ -1,0 +1,501 @@
+ -> 0x16d1a0922b12 @    0 : 12 00             LdaConstant [0]
+      [ accumulator <- 0x16d1a0922121 <ScopeInfo SCRIPT_SCOPE [22]> ]
+ -> 0x16d1a0922b14 @    2 : 26 f9             Star r2
+      [ accumulator -> 0x16d1a0922121 <ScopeInfo SCRIPT_SCOPE [22]> ]
+      [          r2 <- 0x16d1a0922121 <ScopeInfo SCRIPT_SCOPE [22]> ]
+ -> 0x16d1a0922b16 @    4 : 5e 7c 01 f9 01    CallRuntime [NewScriptContext], r2-r2
+      [          r2 -> 0x16d1a0922121 <ScopeInfo SCRIPT_SCOPE [22]> ]
+      [ accumulator <- 0x16d1a0922e61 <ScriptContext[10]> ]
+ -> 0x16d1a0922b1b @    9 : 16 f9             PushContext r2
+      [ accumulator -> 0x16d1a0922e61 <ScriptContext[10]> ]
+      [          r2 <- 0x16d1a0902201 <NativeContext[249]> ]
+ -> 0x16d1a0922b1d @   11 : 0f                LdaTheHole 
+      [ accumulator <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b1e @   12 : 1d 04             StaCurrentContextSlot [4]
+      [ accumulator -> 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b20 @   14 : 0f                LdaTheHole 
+      [ accumulator <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b21 @   15 : 1d 05             StaCurrentContextSlot [5]
+      [ accumulator -> 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b23 @   17 : 0f                LdaTheHole 
+      [ accumulator <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b24 @   18 : 1d 06             StaCurrentContextSlot [6]
+      [ accumulator -> 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b26 @   20 : 0f                LdaTheHole 
+      [ accumulator <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b27 @   21 : 1d 07             StaCurrentContextSlot [7]
+      [ accumulator -> 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b29 @   23 : 0f                LdaTheHole 
+      [ accumulator <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b2a @   24 : 1d 08             StaCurrentContextSlot [8]
+      [ accumulator -> 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b2c @   26 : 0f                LdaTheHole 
+      [ accumulator <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b2d @   27 : 1d 09             StaCurrentContextSlot [9]
+      [ accumulator -> 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b2f @   29 : a0                StackCheck 
+ -> 0x16d1a0922b30 @   30 : 0f                LdaTheHole 
+      [ accumulator <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b31 @   31 : 26 f5             Star r6
+      [ accumulator -> 0x3a2739882801 <the_hole> ]
+      [          r6 <- 0x3a2739882801 <the_hole> ]
+ -> 0x16d1a0922b33 @   33 : 7c 02 00 00       CreateClosure [2], [0], #0
+      [ accumulator <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922b37 @   37 : 26 f8             Star r3
+      [ accumulator -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [          r3 <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922b39 @   39 : 12 01             LdaConstant [1]
+      [ accumulator <- 0x04dfe2e86131 <FixedArray[7]> ]
+ -> 0x16d1a0922b3b @   41 : 26 f7             Star r4
+      [ accumulator -> 0x04dfe2e86131 <FixedArray[7]> ]
+      [          r4 <- 0x04dfe2e86131 <FixedArray[7]> ]
+ -> 0x16d1a0922b3d @   43 : 7c 03 01 00       CreateClosure [3], [1], #0
+      [ accumulator <- 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+ -> 0x16d1a0922b41 @   47 : 26 f4             Star r7
+      [ accumulator -> 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+      [          r7 <- 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+ -> 0x16d1a0922b43 @   49 : 7c 04 02 00       CreateClosure [4], [2], #0
+      [ accumulator <- 0x04dfe2e86251 <JSFunction get contractUser (sfi = 0x16d1a09222e9)> ]
+ -> 0x16d1a0922b47 @   53 : 26 f3             Star r8
+      [ accumulator -> 0x04dfe2e86251 <JSFunction get contractUser (sfi = 0x16d1a09222e9)> ]
+      [          r8 <- 0x04dfe2e86251 <JSFunction get contractUser (sfi = 0x16d1a09222e9)> ]
+ -> 0x16d1a0922b49 @   55 : 7c 05 03 00       CreateClosure [5], [3], #0
+      [ accumulator <- 0x04dfe2e86289 <JSFunction set contractUser (sfi = 0x16d1a0922381)> ]
+ -> 0x16d1a0922b4d @   59 : 26 f2             Star r9
+      [ accumulator -> 0x04dfe2e86289 <JSFunction set contractUser (sfi = 0x16d1a0922381)> ]
+      [          r9 <- 0x04dfe2e86289 <JSFunction set contractUser (sfi = 0x16d1a0922381)> ]
+ -> 0x16d1a0922b4f @   61 : 7c 06 04 00       CreateClosure [6], [4], #0
+      [ accumulator <- 0x04dfe2e862c1 <JSFunction name (sfi = 0x16d1a09223f1)> ]
+ -> 0x16d1a0922b53 @   65 : 26 f1             Star r10
+      [ accumulator -> 0x04dfe2e862c1 <JSFunction name (sfi = 0x16d1a09223f1)> ]
+      [         r10 <- 0x04dfe2e862c1 <JSFunction name (sfi = 0x16d1a09223f1)> ]
+ -> 0x16d1a0922b55 @   67 : 7c 07 05 00       CreateClosure [7], [5], #0
+      [ accumulator <- 0x04dfe2e862f9 <JSFunction symbol (sfi = 0x16d1a0922461)> ]
+ -> 0x16d1a0922b59 @   71 : 26 f0             Star r11
+      [ accumulator -> 0x04dfe2e862f9 <JSFunction symbol (sfi = 0x16d1a0922461)> ]
+      [         r11 <- 0x04dfe2e862f9 <JSFunction symbol (sfi = 0x16d1a0922461)> ]
+ -> 0x16d1a0922b5b @   73 : 7c 08 06 00       CreateClosure [8], [6], #0
+      [ accumulator <- 0x04dfe2e86331 <JSFunction decimals (sfi = 0x16d1a09224d1)> ]
+ -> 0x16d1a0922b5f @   77 : 26 ef             Star r12
+      [ accumulator -> 0x04dfe2e86331 <JSFunction decimals (sfi = 0x16d1a09224d1)> ]
+      [         r12 <- 0x04dfe2e86331 <JSFunction decimals (sfi = 0x16d1a09224d1)> ]
+ -> 0x16d1a0922b61 @   79 : 7c 09 07 00       CreateClosure [9], [7], #0
+      [ accumulator <- 0x04dfe2e86369 <JSFunction totalSupply (sfi = 0x16d1a0922541)> ]
+ -> 0x16d1a0922b65 @   83 : 26 ee             Star r13
+      [ accumulator -> 0x04dfe2e86369 <JSFunction totalSupply (sfi = 0x16d1a0922541)> ]
+      [         r13 <- 0x04dfe2e86369 <JSFunction totalSupply (sfi = 0x16d1a0922541)> ]
+ -> 0x16d1a0922b67 @   85 : 7c 0a 08 00       CreateClosure [10], [8], #0
+      [ accumulator <- 0x04dfe2e863a1 <JSFunction balanceOf (sfi = 0x16d1a09225b1)> ]
+ -> 0x16d1a0922b6b @   89 : 26 ed             Star r14
+      [ accumulator -> 0x04dfe2e863a1 <JSFunction balanceOf (sfi = 0x16d1a09225b1)> ]
+      [         r14 <- 0x04dfe2e863a1 <JSFunction balanceOf (sfi = 0x16d1a09225b1)> ]
+ -> 0x16d1a0922b6d @   91 : 7c 0b 09 00       CreateClosure [11], [9], #0
+      [ accumulator <- 0x04dfe2e863d9 <JSFunction finalizeContract (sfi = 0x16d1a0922621)> ]
+ -> 0x16d1a0922b71 @   95 : 26 ec             Star r15
+      [ accumulator -> 0x04dfe2e863d9 <JSFunction finalizeContract (sfi = 0x16d1a0922621)> ]
+      [         r15 <- 0x04dfe2e863d9 <JSFunction finalizeContract (sfi = 0x16d1a0922621)> ]
+ -> 0x16d1a0922b73 @   97 : 7c 0c 0a 00       CreateClosure [12], [10], #0
+      [ accumulator <- 0x04dfe2e86411 <JSFunction transfer (sfi = 0x16d1a0922691)> ]
+ -> 0x16d1a0922b77 @  101 : 26 eb             Star r16
+      [ accumulator -> 0x04dfe2e86411 <JSFunction transfer (sfi = 0x16d1a0922691)> ]
+      [         r16 <- 0x04dfe2e86411 <JSFunction transfer (sfi = 0x16d1a0922691)> ]
+ -> 0x16d1a0922b79 @  103 : 7c 0d 0b 00       CreateClosure [13], [11], #0
+      [ accumulator <- 0x04dfe2e86449 <JSFunction transferFrom (sfi = 0x16d1a0922701)> ]
+ -> 0x16d1a0922b7d @  107 : 26 ea             Star r17
+      [ accumulator -> 0x04dfe2e86449 <JSFunction transferFrom (sfi = 0x16d1a0922701)> ]
+      [         r17 <- 0x04dfe2e86449 <JSFunction transferFrom (sfi = 0x16d1a0922701)> ]
+ -> 0x16d1a0922b7f @  109 : 7c 0e 0c 00       CreateClosure [14], [12], #0
+      [ accumulator <- 0x04dfe2e86481 <JSFunction approve (sfi = 0x16d1a0922771)> ]
+ -> 0x16d1a0922b83 @  113 : 26 e9             Star r18
+      [ accumulator -> 0x04dfe2e86481 <JSFunction approve (sfi = 0x16d1a0922771)> ]
+      [         r18 <- 0x04dfe2e86481 <JSFunction approve (sfi = 0x16d1a0922771)> ]
+ -> 0x16d1a0922b85 @  115 : 7c 0f 0d 00       CreateClosure [15], [13], #0
+      [ accumulator <- 0x04dfe2e864b9 <JSFunction setContract (sfi = 0x16d1a09227e1)> ]
+ -> 0x16d1a0922b89 @  119 : 26 e8             Star r19
+      [ accumulator -> 0x04dfe2e864b9 <JSFunction setContract (sfi = 0x16d1a09227e1)> ]
+      [         r19 <- 0x04dfe2e864b9 <JSFunction setContract (sfi = 0x16d1a09227e1)> ]
+ -> 0x16d1a0922b8b @  121 : 7c 10 0e 00       CreateClosure [16], [14], #0
+      [ accumulator <- 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+ -> 0x16d1a0922b8f @  125 : 26 e7             Star r20
+      [ accumulator -> 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+      [         r20 <- 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+ -> 0x16d1a0922b91 @  127 : 7c 11 0f 00       CreateClosure [17], [15], #0
+      [ accumulator <- 0x04dfe2e86529 <JSFunction burn (sfi = 0x16d1a09228c1)> ]
+ -> 0x16d1a0922b95 @  131 : 26 e6             Star r21
+      [ accumulator -> 0x04dfe2e86529 <JSFunction burn (sfi = 0x16d1a09228c1)> ]
+      [         r21 <- 0x04dfe2e86529 <JSFunction burn (sfi = 0x16d1a09228c1)> ]
+ -> 0x16d1a0922b97 @  133 : 27 f8 f6          Mov r3, r5
+      [          r3 -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [          r5 <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922b9a @  136 : 5e 26 00 f7 12    CallRuntime [DefineClass], r4-r21
+      [          r4 -> 0x04dfe2e86131 <FixedArray[7]> ]
+      [          r5 -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [          r6 -> 0x3a2739882801 <the_hole> ]
+      [          r7 -> 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+      [          r8 -> 0x04dfe2e86251 <JSFunction get contractUser (sfi = 0x16d1a09222e9)> ]
+      [          r9 -> 0x04dfe2e86289 <JSFunction set contractUser (sfi = 0x16d1a0922381)> ]
+      [         r10 -> 0x04dfe2e862c1 <JSFunction name (sfi = 0x16d1a09223f1)> ]
+      [         r11 -> 0x04dfe2e862f9 <JSFunction symbol (sfi = 0x16d1a0922461)> ]
+      [         r12 -> 0x04dfe2e86331 <JSFunction decimals (sfi = 0x16d1a09224d1)> ]
+      [         r13 -> 0x04dfe2e86369 <JSFunction totalSupply (sfi = 0x16d1a0922541)> ]
+      [         r14 -> 0x04dfe2e863a1 <JSFunction balanceOf (sfi = 0x16d1a09225b1)> ]
+      [         r15 -> 0x04dfe2e863d9 <JSFunction finalizeContract (sfi = 0x16d1a0922621)> ]
+      [         r16 -> 0x04dfe2e86411 <JSFunction transfer (sfi = 0x16d1a0922691)> ]
+      [         r17 -> 0x04dfe2e86449 <JSFunction transferFrom (sfi = 0x16d1a0922701)> ]
+      [         r18 -> 0x04dfe2e86481 <JSFunction approve (sfi = 0x16d1a0922771)> ]
+      [         r19 -> 0x04dfe2e864b9 <JSFunction setContract (sfi = 0x16d1a09227e1)> ]
+      [         r20 -> 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+      [         r21 -> 0x04dfe2e86529 <JSFunction burn (sfi = 0x16d1a09228c1)> ]
+      [ accumulator <- 0x04dfe2e86561 <ShtrukToken map = 0x133e03587b61> ]
+ -> 0x16d1a0922b9f @  141 : 26 f7             Star r4
+      [ accumulator -> 0x04dfe2e86561 <ShtrukToken map = 0x133e03587b61> ]
+      [          r4 <- 0x04dfe2e86561 <ShtrukToken map = 0x133e03587b61> ]
+ -> 0x16d1a0922ba1 @  143 : 27 f6 fb          Mov r5, r0
+      [          r5 -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [          r0 <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922ba4 @  146 : 25 fb             Ldar r0
+      [          r0 -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [ accumulator <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922ba6 @  148 : 1d 04             StaCurrentContextSlot [4]
+      [ accumulator -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922ba8 @  150 : 79 12 10 29 f8    CreateObjectLiteral [18], [16], #41, r3
+      [          r3 <- 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bad @  155 : 25 f8             Ldar r3
+      [          r3 -> 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+      [ accumulator <- 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922baf @  157 : 1d 05             StaCurrentContextSlot [5]
+      [ accumulator -> 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bb1 @  159 : 79 13 11 29 f8    CreateObjectLiteral [19], [17], #41, r3
+      [          r3 <- 0x04dfe2e867f9 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bb6 @  164 : 25 f8             Ldar r3
+      [          r3 -> 0x04dfe2e867f9 <Object map = 0x133e03587c11> ]
+      [ accumulator <- 0x04dfe2e867f9 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bb8 @  166 : 1d 06             StaCurrentContextSlot [6]
+      [ accumulator -> 0x04dfe2e867f9 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bba @  168 : 79 14 12 29 f8    CreateObjectLiteral [20], [18], #41, r3
+      [          r3 <- 0x04dfe2e86819 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bbf @  173 : 25 f8             Ldar r3
+      [          r3 -> 0x04dfe2e86819 <Object map = 0x133e03587c11> ]
+      [ accumulator <- 0x04dfe2e86819 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bc1 @  175 : 1d 07             StaCurrentContextSlot [7]
+      [ accumulator -> 0x04dfe2e86819 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bc3 @  177 : 79 15 13 29 f8    CreateObjectLiteral [21], [19], #41, r3
+      [          r3 <- 0x04dfe2e86839 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bc8 @  182 : 25 f8             Ldar r3
+      [          r3 -> 0x04dfe2e86839 <Object map = 0x133e03587c11> ]
+      [ accumulator <- 0x04dfe2e86839 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bca @  184 : 1d 08             StaCurrentContextSlot [8]
+      [ accumulator -> 0x04dfe2e86839 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bcc @  186 : 1a 04             LdaCurrentContextSlot [4]
+      [ accumulator <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922bce @  188 : 26 f8             Star r3
+      [ accumulator -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [          r3 <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922bd0 @  190 : 1b 05             LdaImmutableCurrentContextSlot [5]
+      [ accumulator <- 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bd2 @  192 : 26 f7             Star r4
+      [ accumulator -> 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+      [          r4 <- 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a0922bd4 @  194 : 25 f8             Ldar r3
+      [          r3 -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [ accumulator <- 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+ -> 0x16d1a0922bd6 @  196 : 62 f8 f7 01 14    Construct r3, r4-r4, [20]
+      [ accumulator -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [          r3 -> 0x04dfe2e861d9 <JSFunction ShtrukToken (sfi = 0x16d1a09221e1)> ]
+      [          r4 -> 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+ -> 0x16d1a092352a @    0 : a0                StackCheck 
+ -> 0x16d1a092352b @    1 : 12 00             LdaConstant [0]
+      [ accumulator <- 0x16d1a0923309 <String[11]: SHTRUKTOKEN> ]
+ -> 0x16d1a092352d @    3 : 2c 03 01 00       StaNamedProperty <this>, [1], [0]
+      [ accumulator -> 0x16d1a0923309 <String[11]: SHTRUKTOKEN> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587c69> ]
+      [ accumulator <- 0x16d1a0923309 <String[11]: SHTRUKTOKEN> ]
+ -> 0x16d1a0923531 @    7 : 12 02             LdaConstant [2]
+      [ accumulator <- 0x16d1a0923331 <String[2]: ST> ]
+ -> 0x16d1a0923533 @    9 : 2c 03 03 02       StaNamedProperty <this>, [3], [2]
+      [ accumulator -> 0x16d1a0923331 <String[2]: ST> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587d19> ]
+      [ accumulator <- 0x16d1a0923331 <String[2]: ST> ]
+ -> 0x16d1a0923537 @   13 : 0c 02             LdaSmi [2]
+      [ accumulator <- 2 ]
+ -> 0x16d1a0923539 @   15 : 2c 03 04 04       StaNamedProperty <this>, [4], [4]
+      [ accumulator -> 2 ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587d71> ]
+      [ accumulator <- 2 ]
+ -> 0x16d1a092353d @   19 : 7a                CreateEmptyObjectLiteral 
+      [ accumulator <- 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+ -> 0x16d1a092353e @   20 : 2c 03 05 06       StaNamedProperty <this>, [5], [6]
+      [ accumulator -> 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587dc9> ]
+      [ accumulator <- 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923542 @   24 : 7a                CreateEmptyObjectLiteral 
+      [ accumulator <- 0x04dfe2e86e29 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923543 @   25 : 2c 03 06 08       StaNamedProperty <this>, [6], [8]
+      [ accumulator -> 0x04dfe2e86e29 <Object map = 0x133e03582571> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587e21> ]
+      [ accumulator <- 0x04dfe2e86e29 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923547 @   29 : 28 02 07 0a       LdaNamedProperty a0, [7], [10]
+      [          a0 -> 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a092354b @   33 : 2c 03 08 0c       StaNamedProperty <this>, [8], [12]
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587e79> ]
+ -> 0x16d1a0923892 @    0 : a0                StackCheck 
+ -> 0x16d1a0923893 @    1 : 25 02             Ldar a0
+      [          a0 -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923895 @    3 : 2c 03 00 00       StaNamedProperty <this>, [0], [0]
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587e79> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923899 @    7 : 28 03 01 02       LdaNamedProperty <this>, [1], [2]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+      [ accumulator <- 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+ -> 0x16d1a092389d @   11 : 26 fb             Star r0
+      [ accumulator -> 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+      [          r0 <- 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+ -> 0x16d1a092389f @   13 : 56 fb 03 04       CallProperty0 r0, <this>, [4]
+      [          r0 -> 0x04dfe2e86219 <JSFunction updateAllowed (sfi = 0x16d1a0922251)> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+ -> 0x16d1a0923ac2 @    0 : 7f 00 01          CreateFunctionContext [0], [1]
+      [ accumulator <- 0x04dfe2e87041 <FunctionContext[5]> ]
+ -> 0x16d1a0923ac5 @    3 : 16 fb             PushContext r0
+      [ accumulator -> 0x04dfe2e87041 <FunctionContext[5]> ]
+      [          r0 <- 0x16d1a0922e61 <ScriptContext[10]> ]
+ -> 0x16d1a0923ac7 @    5 : 25 02             Ldar <this>
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+      [ accumulator <- 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+ -> 0x16d1a0923ac9 @    7 : 1d 04             StaCurrentContextSlot [4]
+      [ accumulator -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+ -> 0x16d1a0923acb @    9 : a0                StackCheck 
+ -> 0x16d1a0923acc @   10 : 13 01 00          LdaGlobal [1], [0]
+      [ accumulator <- 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+ -> 0x16d1a0923acf @   13 : 26 f8             Star r3
+      [ accumulator -> 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+      [          r3 <- 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+ -> 0x16d1a0923ad1 @   15 : 28 f8 02 02       LdaNamedProperty r3, [2], [2]
+      [          r3 -> 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+      [ accumulator <- 0x16d1a09035d9 <JSFunction keys (sfi = 0xb659ec10499)> ]
+ -> 0x16d1a0923ad5 @   19 : 26 f9             Star r2
+      [ accumulator -> 0x16d1a09035d9 <JSFunction keys (sfi = 0xb659ec10499)> ]
+      [          r2 <- 0x16d1a09035d9 <JSFunction keys (sfi = 0xb659ec10499)> ]
+ -> 0x16d1a0923ad7 @   21 : 1b 04             LdaImmutableCurrentContextSlot [4]
+      [ accumulator <- 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+ -> 0x16d1a0923ad9 @   23 : 26 f7             Star r4
+      [ accumulator -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+      [          r4 <- 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+ -> 0x16d1a0923adb @   25 : 28 f7 03 04       LdaNamedProperty r4, [3], [4]
+      [          r4 -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+      [ accumulator <- 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923adf @   29 : 26 f7             Star r4
+      [ accumulator -> 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+      [          r4 <- 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923ae1 @   31 : 57 f9 f8 f7 06    CallProperty1 r2, r3, r4, [6]
+      [          r2 -> 0x16d1a09035d9 <JSFunction keys (sfi = 0xb659ec10499)> ]
+      [          r3 -> 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+      [          r4 -> 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923ae6 @   36 : 26 f9             Star r2
+      [ accumulator -> 0x04dfe2e87079 <JSArray[0]> ]
+      [          r2 <- 0x04dfe2e87079 <JSArray[0]> ]
+ -> 0x16d1a0923ae8 @   38 : 28 f9 04 08       LdaNamedProperty r2, [4], [8]
+      [          r2 -> 0x04dfe2e87079 <JSArray[0]> ]
+      [ accumulator <- 0x16d1a0905239 <JSFunction forEach (sfi = 0xb659ec11dc1)> ]
+ -> 0x16d1a0923aec @   42 : 26 fa             Star r1
+      [ accumulator -> 0x16d1a0905239 <JSFunction forEach (sfi = 0xb659ec11dc1)> ]
+      [          r1 <- 0x16d1a0905239 <JSFunction forEach (sfi = 0xb659ec11dc1)> ]
+ -> 0x16d1a0923aee @   44 : 7c 05 0a 02       CreateClosure [5], [10], #2
+      [ accumulator <- 0x04dfe2e87099 <JSFunction Object.keys.forEach (sfi = 0x16d1a09239a1)> ]
+ -> 0x16d1a0923af2 @   48 : 26 f8             Star r3
+      [ accumulator -> 0x04dfe2e87099 <JSFunction Object.keys.forEach (sfi = 0x16d1a09239a1)> ]
+      [          r3 <- 0x04dfe2e87099 <JSFunction Object.keys.forEach (sfi = 0x16d1a09239a1)> ]
+ -> 0x16d1a0923af4 @   50 : 57 fa f9 f8 0b    CallProperty1 r1, r2, r3, [11]
+      [          r1 -> 0x16d1a0905239 <JSFunction forEach (sfi = 0xb659ec11dc1)> ]
+      [          r2 -> 0x04dfe2e87079 <JSArray[0]> ]
+      [          r3 -> 0x04dfe2e87099 <JSFunction Object.keys.forEach (sfi = 0x16d1a09239a1)> ]
+ -> 0x16d1a0923af9 @   55 : 0d                LdaUndefined 
+      [ accumulator <- 0x3a27398826f1 <undefined> ]
+ -> 0x16d1a0923afa @   56 : a4                Return 
+      [ accumulator -> 0x3a27398826f1 <undefined> ]
+ -> 0x16d1a09238a3 @   17 : 0d                LdaUndefined 
+      [ accumulator <- 0x3a27398826f1 <undefined> ]
+ -> 0x16d1a09238a4 @   18 : a4                Return 
+      [ accumulator -> 0x3a27398826f1 <undefined> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a092354f @   37 : 0b                LdaZero 
+      [ accumulator <- 0 ]
+ -> 0x16d1a0923550 @   38 : 2c 03 09 0e       StaNamedProperty <this>, [9], [14]
+      [ accumulator -> 0 ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587ed1> ]
+      [ accumulator <- 0 ]
+ -> 0x16d1a0923554 @   42 : 11                LdaFalse 
+      [ accumulator <- 0x3a27398829a1 <false> ]
+ -> 0x16d1a0923555 @   43 : 2c 03 0a 10       StaNamedProperty <this>, [10], [16]
+      [ accumulator -> 0x3a27398829a1 <false> ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587f29> ]
+      [ accumulator <- 0x3a27398829a1 <false> ]
+ -> 0x16d1a0923559 @   47 : 13 0b 12          LdaGlobal [11], [18]
+      [ accumulator <- 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+ -> 0x16d1a092355c @   50 : 26 fa             Star r1
+      [ accumulator -> 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+      [          r1 <- 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+ -> 0x16d1a092355e @   52 : 28 fa 0c 14       LdaNamedProperty r1, [12], [20]
+      [          r1 -> 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+      [ accumulator <- 0x16d1a0903451 <JSFunction defineProperty (sfi = 0xb659ec10129)> ]
+ -> 0x16d1a0923562 @   56 : 26 fb             Star r0
+      [ accumulator -> 0x16d1a0903451 <JSFunction defineProperty (sfi = 0xb659ec10129)> ]
+      [          r0 <- 0x16d1a0903451 <JSFunction defineProperty (sfi = 0xb659ec10129)> ]
+ -> 0x16d1a0923564 @   58 : 12 0d             LdaConstant [13]
+      [ accumulator <- 0x16d1a0921bd9 <String[6]: _owner> ]
+ -> 0x16d1a0923566 @   60 : 79 0e 16 29 f7    CreateObjectLiteral [14], [22], #41, r4
+      [          r4 <- 0x04dfe2e87279 <Object map = 0x133e035880e1> ]
+ -> 0x16d1a092356b @   65 : 26 f8             Star r3
+      [ accumulator -> 0x16d1a0921bd9 <String[6]: _owner> ]
+      [          r3 <- 0x16d1a0921bd9 <String[6]: _owner> ]
+ -> 0x16d1a092356d @   67 : 28 02 07 17       LdaNamedProperty a0, [7], [23]
+      [          a0 -> 0x04dfe2e867a1 <Object map = 0x133e03587c11> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923571 @   71 : 2d f7 0f 19       StaNamedOwnProperty r4, [15], [25]
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [          r4 -> 0x04dfe2e87279 <Object map = 0x133e035880e1> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923575 @   75 : 27 03 f9          Mov <this>, r2
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587f81> ]
+      [          r2 <- 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587f81> ]
+ -> 0x16d1a0923578 @   78 : 55 fb fa 04 1b    CallProperty r0, r1-r4, [27]
+      [          r0 -> 0x16d1a0903451 <JSFunction defineProperty (sfi = 0xb659ec10129)> ]
+      [          r1 -> 0x16d1a0902a71 <JSFunction Object (sfi = 0xb659ec0f511)> ]
+      [          r2 -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03587f81> ]
+      [          r3 -> 0x16d1a0921bd9 <String[6]: _owner> ]
+      [          r4 -> 0x04dfe2e87279 <Object map = 0x133e035880e1> ]
+ -> 0x16d1a092357d @   83 : 28 03 05 1d       LdaNamedProperty <this>, [5], [29]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923581 @   87 : 26 fb             Star r0
+      [ accumulator -> 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+      [          r0 <- 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+ -> 0x16d1a0923583 @   89 : 28 03 0d 1f       LdaNamedProperty <this>, [13], [31]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923587 @   93 : 26 fa             Star r1
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [          r1 <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923589 @   95 : 28 03 09 21       LdaNamedProperty <this>, [9], [33]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0 ]
+ -> 0x16d1a092358d @   99 : 2e fb fa 23       StaKeyedProperty r0, r1, [35]
+      [ accumulator -> 0 ]
+      [          r0 -> 0x04dfe2e86d71 <Object map = 0x133e03582571> ]
+      [          r1 -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [ accumulator <- 0 ]
+ -> 0x16d1a0923591 @  103 : 0d                LdaUndefined 
+      [ accumulator <- 0x3a27398826f1 <undefined> ]
+ -> 0x16d1a0923592 @  104 : a4                Return 
+      [ accumulator -> 0x3a27398826f1 <undefined> ]
+      [ accumulator <- 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+ -> 0x16d1a0922bdb @  201 : 1d 09             StaCurrentContextSlot [9]
+      [ accumulator -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+ -> 0x16d1a0922bdd @  203 : 1b 09             LdaImmutableCurrentContextSlot [9]
+      [ accumulator <- 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+ -> 0x16d1a0922bdf @  205 : 26 f7             Star r4
+      [ accumulator -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [          r4 <- 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+ -> 0x16d1a0922be1 @  207 : 28 f7 16 16       LdaNamedProperty r4, [22], [22]
+      [          r4 -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+ -> 0x16d1a0922be5 @  211 : 26 f8             Star r3
+      [ accumulator -> 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+      [          r3 <- 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+ -> 0x16d1a0922be7 @  213 : 01 0c 40 42 0f 00 LdaSmi.ExtraWide [1000000]
+      [ accumulator <- 1000000 ]
+ -> 0x16d1a0922bed @  219 : 26 f6             Star r5
+      [ accumulator -> 1000000 ]
+      [          r5 <- 1000000 ]
+ -> 0x16d1a0922bef @  221 : 57 f8 f7 f6 18    CallProperty1 r3, r4, r5, [24]
+      [          r3 -> 0x04dfe2e864f1 <JSFunction setOptions (sfi = 0x16d1a0922851)> ]
+      [          r4 -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [          r5 -> 1000000 ]
+ -> 0x16d1a0923daa @    0 : a0                StackCheck 
+ -> 0x16d1a0923dab @    1 : 28 03 00 00       LdaNamedProperty <this>, [0], [0]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+ -> 0x16d1a0924022 @    0 : a0                StackCheck 
+ -> 0x16d1a0924023 @    1 : 28 02 00 00       LdaNamedProperty <this>, [0], [0]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0924027 @    5 : a4                Return 
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923daf @    5 : 26 fb             Star r0
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [          r0 <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923db1 @    7 : 28 03 01 02       LdaNamedProperty <this>, [1], [2]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923db5 @   11 : 65 fb 04          TestEqualStrict r0, [4]
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [          r0 -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [ accumulator <- 0x3a27398828c9 <true> ]
+ -> 0x16d1a0923db8 @   14 : 94 33             JumpIfFalse [51]
+      [ accumulator -> 0x3a27398828c9 <true> ]
+ -> 0x16d1a0923dba @   16 : 28 03 02 05       LdaNamedProperty <this>, [2], [5]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x3a27398829a1 <false> ]
+ -> 0x16d1a0923dbe @   20 : 91 2d             JumpIfToBooleanTrue [45]
+      [ accumulator -> 0x3a27398829a1 <false> ]
+ -> 0x16d1a0923dc0 @   22 : 28 03 03 07       LdaNamedProperty <this>, [3], [7]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0 ]
+ -> 0x16d1a0923dc4 @   26 : 26 fa             Star r1
+      [ accumulator -> 0 ]
+      [          r1 <- 0 ]
+ -> 0x16d1a0923dc6 @   28 : 25 02             Ldar a0
+      [          a0 -> 1000000 ]
+      [ accumulator <- 1000000 ]
+ -> 0x16d1a0923dc8 @   30 : 32 fa 09          Add r1, [9]
+      [ accumulator -> 1000000 ]
+      [          r1 -> 0 ]
+      [ accumulator <- 1000000 ]
+ -> 0x16d1a0923dcb @   33 : 2c 03 03 0a       StaNamedProperty <this>, [3], [10]
+      [ accumulator -> 1000000 ]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 1000000 ]
+ -> 0x16d1a0923dcf @   37 : 28 03 04 0c       LdaNamedProperty <this>, [4], [12]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x04dfe2e86d71 <Object map = 0x133e03588191> ]
+ -> 0x16d1a0923dd3 @   41 : 26 fb             Star r0
+      [ accumulator -> 0x04dfe2e86d71 <Object map = 0x133e03588191> ]
+      [          r0 <- 0x04dfe2e86d71 <Object map = 0x133e03588191> ]
+ -> 0x16d1a0923dd5 @   43 : 28 03 01 0e       LdaNamedProperty <this>, [1], [14]
+      [      <this> -> 0x04dfe2e86b91 <ShtrukToken map = 0x133e03588139> ]
+      [ accumulator <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923dd9 @   47 : 26 fa             Star r1
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [          r1 <- 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+ -> 0x16d1a0923ddb @   49 : 29 fb 10          LdaKeyedProperty r0, [16]
+      [ accumulator -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [          r0 -> 0x04dfe2e86d71 <Object map = 0x133e03588191> ]
+      [ accumulator <- 0 ]
+ -> 0x16d1a0923dde @   52 : 26 f9             Star r2
+      [ accumulator -> 0 ]
+      [          r2 <- 0 ]
+ -> 0x16d1a0923de0 @   54 : 25 02             Ldar a0
+      [          a0 -> 1000000 ]
+      [ accumulator <- 1000000 ]
+ -> 0x16d1a0923de2 @   56 : 32 f9 12          Add r2, [18]
+      [ accumulator -> 1000000 ]
+      [          r2 -> 0 ]
+      [ accumulator <- 1000000 ]
+ -> 0x16d1a0923de5 @   59 : 2e fb fa 13       StaKeyedProperty r0, r1, [19]
+      [ accumulator -> 1000000 ]
+      [          r0 -> 0x04dfe2e86d71 <Object map = 0x133e03588191> ]
+      [          r1 -> 0x16d1a0921ef1 <String[52]: 0x040ed03be4a26fbee44a367ced46e3ae1a169a51aab4129fbf> ]
+      [ accumulator <- 1000000 ]
+ -> 0x16d1a0923de9 @   63 : 86 13             Jump [19]
+ -> 0x16d1a0923dfc @   82 : 0d                LdaUndefined 
+      [ accumulator <- 0x3a27398826f1 <undefined> ]
+ -> 0x16d1a0923dfd @   83 : a4                Return 
+      [ accumulator -> 0x3a27398826f1 <undefined> ]
+ -> 0x16d1a0922bf4 @  226 : 26 fa             Star r1
+      [ accumulator -> 0x3a27398826f1 <undefined> ]
+      [          r1 <- 0x3a27398826f1 <undefined> ]
+ -> 0x16d1a0922bf6 @  228 : a4                Return 
+      [ accumulator -> 0x3a27398826f1 <undefined> ]
