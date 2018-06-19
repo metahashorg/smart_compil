@@ -1,0 +1,23 @@
+ -> 0x3169b4921d82 @    0 : 12 00             LdaConstant [0]
+      [ accumulator <- 0x3169b4921bd9 <FixedArray[8]> ]
+ -> 0x3169b4921d84 @    2 : 26 fb             Star r0
+      [ accumulator -> 0x3169b4921bd9 <FixedArray[8]> ]
+      [          r0 <- 0x3169b4921bd9 <FixedArray[8]> ]
+ -> 0x3169b4921d86 @    4 : 0b                LdaZero 
+      [ accumulator <- 0 ]
+ -> 0x3169b4921d87 @    5 : 26 fa             Star r1
+      [ accumulator -> 0 ]
+      [          r1 <- 0 ]
+ -> 0x3169b4921d89 @    7 : 27 fe f9          Mov <closure>, r2
+      [   <closure> -> 0x3169b4921da9 <JSFunction (sfi = 0x3169b4921b11)> ]
+      [          r2 <- 0x3169b4921da9 <JSFunction (sfi = 0x3169b4921b11)> ]
+ -> 0x3169b4921d8c @   10 : 5e 73 01 fb 03    CallRuntime [DeclareGlobals], r0-r2
+      [          r0 -> 0x3169b4921bd9 <FixedArray[8]> ]
+      [          r1 -> 0 ]
+      [          r2 -> 0x3169b4921da9 <JSFunction (sfi = 0x3169b4921b11)> ]
+      [ accumulator <- 0x009662c026f1 <undefined> ]
+ -> 0x3169b4921d91 @   15 : a0                StackCheck 
+ -> 0x3169b4921d92 @   16 : 0d                LdaUndefined 
+      [ accumulator <- 0x009662c026f1 <undefined> ]
+ -> 0x3169b4921d93 @   17 : a4                Return 
+      [ accumulator -> 0x009662c026f1 <undefined> ]
