@@ -1,0 +1,9 @@
+LdaConstant [0]
+Star r0
+LdaZero 
+Star r1
+Mov <closure>, r2
+CallRuntime [DeclareGlobals], r0-r2
+StackCheck 
+LdaUndefined 
+Return 
