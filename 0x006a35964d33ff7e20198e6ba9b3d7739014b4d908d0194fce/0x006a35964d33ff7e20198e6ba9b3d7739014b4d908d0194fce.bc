@@ -1,0 +1,292 @@
+LdaConstant [0]
+Star r2
+CallRuntime [NewScriptContext], r2-r2
+PushContext r2
+LdaTheHole 
+StaCurrentContextSlot [4]
+LdaTheHole 
+StaCurrentContextSlot [5]
+LdaTheHole 
+StaCurrentContextSlot [6]
+LdaTheHole 
+StaCurrentContextSlot [7]
+LdaConstant [1]
+Star r3
+LdaZero 
+Star r4
+Mov <closure>, r5
+CallRuntime [DeclareGlobals], r3-r5
+StackCheck 
+LdaGlobal [2], [2]
+Star r3
+LdaNamedProperty r3, [3], [4]
+Star r3
+CreateClosure [4], [6], #1
+StaNamedProperty r3, [5], [7]
+LdaGlobal [6], [9]
+Star r3
+LdaNamedProperty r3, [3], [11]
+Star r3
+CreateClosure [7], [13], #1
+StaNamedProperty r3, [5], [14]
+CreateClosure [8], [16], #0
+StaCurrentContextSlot [4]
+CreateClosure [9], [17], #0
+StaCurrentContextSlot [5]
+LdaTheHole 
+Star r6
+CreateClosure [11], [18], #0
+Star r3
+LdaConstant [10]
+Star r4
+CreateClosure [12], [19], #0
+Star r7
+CreateClosure [13], [20], #0
+Star r8
+Mov r3, r5
+CallRuntime [DefineClass], r4-r8
+Star r4
+Mov r5, r0
+Ldar r0
+StaCurrentContextSlot [6]
+LdaCurrentContextSlot [6]
+Star r3
+Construct r3, r0-r0, [21]
+StackCheck 
+LdaZero 
+StaNamedProperty <this>, [0], [0]
+LdaGlobal [1], [2]
+Star r1
+Construct r1, r0-r0, [4]
+StaNamedProperty <this>, [2], [6]
+LdaUndefined 
+Return 
+StaGlobal [14], [23]
+LdaConstant [15]
+StaCurrentContextSlot [7]
+LdaGlobal [6], [9]
+Star r4
+LdaNamedProperty r4, [16], [25]
+Star r3
+LdaGlobal [14], [0]
+Star r5
+LdaImmutableCurrentContextSlot [5]
+Star r6
+LdaCurrentContextSlot [7]
+Star r7
+CallUndefinedReceiver1 r6, r7, [27]
+StackCheck 
+LdaGlobal [0], [0]
+Star r14
+LdaNamedProperty r14, [1], [2]
+Star r13
+CallProperty1 r13, r14, a0, [4]
+Star r8
+CreateEmptyObjectLiteral 
+Star r9
+Ldar r8
+JumpIfToBooleanFalseConstant [18]
+LdaNamedProperty r8, [2], [6]
+JumpIfToBooleanFalseConstant [19]
+LdaGlobal [3], [8]
+Star r14
+LdaNamedProperty r14, [4], [10]
+Star r13
+LdaNamedProperty r8, [2], [12]
+Star r15
+CallProperty1 r13, r14, r15, [14]
+JumpIfToBooleanFalseConstant [20]
+LdaNamedProperty r8, [2], [16]
+Star r7
+JumpIfUndefinedConstant [17]
+JumpIfNullConstant [16]
+ToObject r13
+ForInEnumerate r13
+ForInPrepare r14-r16, [18]
+LdaZero 
+Star r17
+ForInContinue r17, r16
+JumpIfFalseConstant [15]
+ForInNext r13, r17, r14-r15, [18]
+JumpIfUndefinedConstant [14]
+Star r12
+StackCheck 
+Star r5
+LdaNamedProperty r7, [5], [19]
+Star r18
+CallProperty1 r18, r7, r12, [21]
+JumpIfToBooleanFalseConstant [13]
+Ldar r5
+LdaKeyedProperty r7, [23]
+Star r4
+LdaNamedProperty r4, [6], [25]
+Star r18
+LdaConstant [7]
+TestEqualStrict r18, [27]
+JumpIfFalse [145]
+LdaNamedProperty r9, [6], [65]
+Star r18
+LdaConstant [11]
+TestEqualStrict r18, [67]
+JumpIfFalse [141]
+LdaNamedProperty r4, [8], [102]
+Star r19
+LdaNamedProperty r4, [9], [104]
+StaKeyedProperty r9, r19, [106]
+ForInStep r17
+Star r17
+JumpLoop.Wide [364], [0]
+ForInContinue r17, r16
+JumpIfFalseConstant [15]
+ForInNext r13, r17, r14-r15, [18]
+JumpIfUndefinedConstant [14]
+Star r12
+StackCheck 
+Star r5
+LdaNamedProperty r7, [5], [19]
+Star r18
+CallProperty1 r18, r7, r12, [21]
+JumpIfToBooleanFalseConstant [13]
+Ldar r5
+LdaKeyedProperty r7, [23]
+Star r4
+LdaNamedProperty r4, [6], [25]
+Star r18
+LdaConstant [7]
+TestEqualStrict r18, [27]
+JumpIfFalse [145]
+LdaNamedProperty r4, [8], [28]
+Star r19
+LdaGlobal [7], [30]
+Star r20
+Construct r20, r0-r0, [32]
+StaKeyedProperty r9, r19, [34]
+LdaNamedProperty r4, [9], [37]
+JumpIfUndefined [117]
+JumpIfNull [115]
+ToObject r18
+ForInEnumerate r18
+ForInPrepare r19-r21, [36]
+LdaZero 
+Star r22
+ForInContinue r22, r21
+JumpIfFalse [100]
+ForInNext r18, r22, r19-r20, [36]
+JumpIfUndefined [86]
+Star r10
+StackCheck 
+Star r2
+LdaNamedProperty r4, [9], [39]
+Star r24
+LdaNamedProperty r24, [5], [41]
+Star r23
+CallProperty1 r23, r24, r10, [43]
+JumpIfToBooleanFalse [62]
+LdaNamedProperty r4, [8], [45]
+LdaKeyedProperty r9, [47]
+Star r24
+LdaNamedProperty r24, [10], [49]
+Star r23
+LdaNamedProperty r4, [9], [51]
+Star r25
+Ldar r2
+LdaKeyedProperty r25, [53]
+Star r25
+LdaZero 
+LdaKeyedProperty r25, [55]
+Star r25
+LdaNamedProperty r4, [9], [57]
+Star r26
+Ldar r2
+LdaKeyedProperty r26, [59]
+Star r26
+LdaSmi [1]
+LdaKeyedProperty r26, [61]
+Star r26
+CallProperty2 r23, r24, r25, r26, [63]
+ForInStep r22
+Star r22
+JumpLoop [100], [1]
+ForInContinue r22, r21
+JumpIfFalse [100]
+ForInNext r18, r22, r19-r20, [36]
+JumpIfUndefined [86]
+Star r10
+StackCheck 
+Star r2
+LdaNamedProperty r4, [9], [39]
+Star r24
+LdaNamedProperty r24, [5], [41]
+Star r23
+CallProperty1 r23, r24, r10, [43]
+JumpIfToBooleanFalse [62]
+LdaNamedProperty r4, [8], [45]
+LdaKeyedProperty r9, [47]
+Star r24
+LdaNamedProperty r24, [10], [49]
+Star r23
+LdaNamedProperty r4, [9], [51]
+Star r25
+Ldar r2
+LdaKeyedProperty r25, [53]
+Star r25
+LdaZero 
+LdaKeyedProperty r25, [55]
+Star r25
+LdaNamedProperty r4, [9], [57]
+Star r26
+Ldar r2
+LdaKeyedProperty r26, [59]
+Star r26
+LdaSmi [1]
+LdaKeyedProperty r26, [61]
+Star r26
+CallProperty2 r23, r24, r25, r26, [63]
+ForInStep r22
+Star r22
+JumpLoop [100], [1]
+ForInContinue r22, r21
+JumpIfFalse [100]
+ForInNext r18, r22, r19-r20, [36]
+JumpIfUndefined [86]
+Star r10
+StackCheck 
+Star r2
+LdaNamedProperty r4, [9], [39]
+Star r24
+LdaNamedProperty r24, [5], [41]
+Star r23
+CallProperty1 r23, r24, r10, [43]
+JumpIfToBooleanFalse [62]
+ForInStep r22
+Star r22
+JumpLoop [100], [1]
+ForInContinue r22, r21
+JumpIfFalse [100]
+Jump [168]
+ForInStep r17
+Star r17
+JumpLoop.Wide [364], [0]
+ForInContinue r17, r16
+JumpIfFalseConstant [15]
+ForInNext r13, r17, r14-r15, [18]
+JumpIfUndefinedConstant [14]
+Star r12
+StackCheck 
+Star r5
+LdaNamedProperty r7, [5], [19]
+Star r18
+CallProperty1 r18, r7, r12, [21]
+JumpIfToBooleanFalseConstant [13]
+ForInStep r17
+Star r17
+JumpLoop.Wide [364], [0]
+ForInContinue r17, r16
+JumpIfFalseConstant [15]
+Ldar r9
+Return 
+Star r6
+CallProperty2 r3, r4, r5, r6, [29]
+StaGlobal [14], [23]
+Star r1
+Return 
